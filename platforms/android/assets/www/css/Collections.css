@@ -1,0 +1,393 @@
+
+
+
+
+
+.list-inline li{
+
+    
+    width:33.3%;
+    
+    
+}
+#leftl{
+    text-align: left;
+    padding-left: 3px;
+}
+#centerl{
+    text-align: center;
+}
+#rightl{
+    text-align:right;
+    padding-right: 10px;
+}
+
+
+
+
+.container{
+    
+    color: black;
+    padding-top: 20px;
+    font-size: 20px;
+    height: 30px;
+    background-color: white;
+    padding-right: 0px
+}
+/* Side Bar CSS */
+#sidebar-wrapper{
+    z-index: 2;
+    color: white;
+    position: absolute;
+    width:0;
+    height: 100%;
+    overflow-y: hidden;
+    background-image: url('../img/0516-800x804.jpg');
+    opacity: 0.95;
+}
+/* Main */
+#main-page{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+
+    
+    
+    
+}
+
+
+/* Change the width of the siebar to display it*/
+#wrapper.menuDisplayed #sidebar-wrapper{
+    width: 250px;
+    height: 520px;
+    margin-top: 20px;
+
+}
+
+#wrapper.menuDisplayed #main-page{
+    padding-left: 250px;
+    
+    
+}
+
+/* Side bar Styling */
+.sidebar-nav{
+    color: white;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+.sidebar-nav li{
+    color: black ;
+    text-indent: 15px;
+    line-height: 40px;
+    
+    
+}
+
+.sidebar-nav li a{
+    display:block;
+    text-decoration: none;
+  /*  background: #ddd; */
+    
+}
+
+.sidebar-nav li a:hover{
+    background: darkgray;
+    
+}
+
+h1{
+    text-align:center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: inline;
+}
+
+h2{text-align:center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    
+    
+    
+}
+#header{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    text-align:center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #C0C0C0;
+    border-top: 1px solid #C0C0C0;
+    
+    
+}
+
+#menu-toggle{
+ background: white;
+ color: black;
+ width: 32px;
+ border-color: white;
+ display:inline-block;
+ 
+
+}
+#One{
+display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    text-align: center;  
+}
+
+#model1, #model2, #model3{
+    position:absolute;
+    right: 0;
+    left: 0;
+    padding:10px;
+    width:225px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+#id01{
+    
+    list-style-type: none;
+    padding:0;
+    z-index: -1;
+    text-align: center;
+    
+}
+h5, p, pre{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    
+
+}
+pre{
+    border: none;
+    display:inline;
+}
+p{
+    display: inline;
+}
+
+
+
+.parent{
+    margin:0;
+    padding-bottom: 5px;
+    height: 15px;
+    
+    box-sizing:border-box;
+    list-style: none;
+}
+ul.child{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: none;
+    background-color: red;
+}
+
+#div01{
+
+    background-color: white;
+    position: absolute;
+    width:160px;
+    font-size:11px;
+    margin:8px;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 1;
+    
+}
+
+
+ul.parent >li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    
+}
+#mainpage{
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    
+}
+
+.blur{
+    filter:blur(4px);
+}
+
+#div1, #div2, #div3, #div4{
+padding: 10px;
+color:black;
+    
+}
+
+a:visited{
+    background-color: lightgrey;
+}
+
+
+
+
+p{
+    
+    
+    
+}
+
+
+
+ul.child3{
+    display: none;
+    width: 350px;
+    height: 35px;
+    position: relative;
+    left:-250px;
+    
+    list-style: none;
+
+    background-color: white;
+    
+    
+    font-size:12px;
+    margin:8px;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 1;
+    
+}
+ul.parent{
+    z-index: -1;
+}
+#sort1{
+    color: black;
+    text-decoration: none;
+    
+    
+    
+}
+
+#divm1, #divm2, #divm3{
+   position:relative;
+    padding:10px;
+    width:225px;
+    height: 200px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    
+}
+#wrap001{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.size005, .quan005{
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    border: 1px solid #ccccb3;
+    
+
+    
+    
+}
+
+.center-block{
+    
+   
+    text-align: center;
+    width: 320px;
+    
+
+
+   
+    
+    
+
+}
+
+#but01, #but001, #but0001{
+    float:left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    
+    
+}
+#but02, #but002, #but0002{
+    background-color: black;
+    font-size:11px;
+    color:white;
+    float: right;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:bold;
+    border:1px solid black;
+    
+
+}
+.fa fa-heart{
+    
+    font-size: 10px;
+}
+
+#cancel1{
+    font-family: 'Josefin Sans', sans-serif;
+    font: #ccccb3;
+    font-size:10px;
+    
+}
+
+
+.modal-body{
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+#myModal{
+    overflow-y: scroll;
+    position:relative;
+    
+}
+
+#btndiv{
+    
+}
+
+
+
+
+
+    

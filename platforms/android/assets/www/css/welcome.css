@@ -1,0 +1,192 @@
+.list-inline li{
+
+    
+    width:33.3%;
+    padding
+    
+}
+#leftl{
+    text-align: left;
+    padding-left: 3px;
+}
+#centerl{
+    text-align: center;
+}
+#rightl{
+    text-align:right;
+    padding-right: 10px;
+}
+
+
+.container{
+    color: black;
+    padding-top: 20px;
+    font-size: 20px;
+    height: 30px;
+    background-color: white;
+    padding-right: 0px
+}
+/* Side Bar CSS */
+#sidebar-wrapper{
+    z-index: 1;
+    color: white;
+    position: absolute;
+    width:0;
+    height: 100%;
+    overflow-y: hidden;
+    background-image: url('../img/0516-800x804.jpg');
+    opacity: 0.95;
+}
+/* Main */
+#main-page{
+    width: 100%;
+    position: absolute;
+    
+    
+    
+}
+
+/* Change the width of the siebar to display it*/
+#wrapper.menuDisplayed #sidebar-wrapper{
+    width: 250px;
+    height: 520px;
+    margin-top: 20px;
+
+}
+
+#wrapper.menuDisplayed #main-page{
+    padding-left: 250px;
+    
+    
+}
+
+/* Side bar Styling */
+.sidebar-nav{
+    color: white;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+.sidebar-nav li{
+    color: black ;
+    text-indent: 15px;
+    line-height: 40px;
+    
+    
+}
+
+.sidebar-nav li a{
+    display:block;
+    text-decoration: none;
+  /*  background: #ddd; */
+    
+}
+
+.sidebar-nav li a:hover{
+    background: darkgray;
+    
+}
+
+
+#One{
+    text-align: center;
+    background-image: url('../img/model9.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat-y: no-repeat;
+
+    height: 190px;
+    
+    margin-bottom: 1px;
+    
+}
+#Two{
+    text-align: center;
+    background-image: url('../img/model3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 190px;
+
+    
+    margin-bottom: 1px;
+}
+
+#Three{
+    text-align: center;
+    background-image: url('../img/feet.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 190px;
+    
+    margin-bottom: 1px;
+    
+}
+
+.item{
+ height: 300px;
+margin-bottom: 1px;
+    
+}
+
+.carousel-caption{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+    
+}
+.header{
+    text-align: center;
+    background-image: url('../img/blue.jpg');
+    background-position: cover;
+    background-repeat-y: no-repeat;
+    height: 100px;
+    
+    margin-left:  -30px;
+    margin-bottom: 1px;
+}
+
+h1{
+    text-align:center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: inline;
+}
+
+h2{text-align:center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    
+    
+    
+}
+
+#menu-toggle{
+ background: white;
+ color: black;
+ width: 32px;
+ border-color: white;
+ display:inline-block;
+ 
+
+}
+
+hr{
+    display: inline;
+    
+}
+#myCarousel{
+    margin-left: -20px;
+    margin-bottom: 1px;
+}
+
+.glyphicon-glyphicon-chevron-left{
+    margin-right: 20px;
+}

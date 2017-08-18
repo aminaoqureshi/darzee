@@ -1,0 +1,109 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    
+    
+    
+}
+
+#text006, #text007, #text008{
+    text-decoration: none;
+}
+
+.container-fluid{
+    border-bottom: 1px solid black;
+    border-top:1px solid black;
+    height: 45px;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding-top:13px;
+    
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+    
+    
+    
+}
+#can1{
+position: absolute;
+    top: 40px;
+    left: 16px;
+    
+}
+#Apply1{
+    position: absolute;
+    top: 40px;
+    right: 16px;
+}
+#can1, #f1, #Apply1{
+
+    height: 30px;
+    
+    
+}
+
+
+
+
+#f1{
+    
+    
+    
+}
+
+#cfilter{
+    height: 25px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+}
+
+#filterop{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+    
+}
+
+#size1, #color1,  #price1{
+    margin-top: 15px;
+    height: 30px;
+    border-bottom: 1px solid #ccccb3;
+    font-size: 12px;
+    font-weight: bold;
+    
+    
+    
+}
+#size01, #color01, #price01 {
+    
+    
+display: none;
+    
+    
+    text-align: center;
+    border-bottom:  1px solid #ccccb3;
+}
+
+
+
+.div0001{
+    padding: 5px;
+    height: 30px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    
+    
+    
+}
+#sizelist, #colorlist, #pricelist{
+    
+    padding: 0px;
+    margin: 0px;
+}

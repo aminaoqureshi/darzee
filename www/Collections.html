@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <style>
+            @viewport{
+                width:auto;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		<script src="phonegap-1.2.0.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+         <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+        <script src="jquery-3.2.1.js" type="text/javascript"></script> 
+       <script src="jquery-ui.js" type="text/javascript"></script>
+      <script src="jquery.min.js" type="text/javascript"></script>
+            <script src="bootstrap.min.js" type="text/javascript"></script>
+        <script src="fontawesome.js" type="text/javascript"></script>
+    
+        <!--Font Link-->
+       <link href="css/Josefin.css" rel="stylesheet" type="text/css">
+        <link href="css/Montserrat.css" rel="stylesheet" type="text/css">
+    
+        <title>Darzee</title>
+        <link rel="stylesheet" href="css/Collections.css" type="text/css">
+        <!--Head-->
+        <div id="wrapper">
+            <div class="container"><ul class="list-inline"><li id="leftl"><a href="#" class="fa fa-bars" id="menu-toggle"></a></li><li id="centerl"><h1 style="color:black;">Shop</h1></li><li id="rightl"><span class="badge" id="badge1"></span><a href="#" style="text-decoration: none;" data-toggle="modal" data-target="#myModal" id="heart1"><font color="black"><i class="fa fa-heart" aria-hidden="true"></i></font></a></li></ul>
+        </div>
+            
+            <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Wish List</h4>
+        </div>
+        <div class="modal-body">
+           
+            <script>
+            
+                <!-- First Button -->
+            
+            
+                $(document).ready(function(){
+            $("#but01").click(function(){
+        $("#mbody1").html(function(){
+          return $("#id01 li:eq(0)").html();
+            });    
+               });
+                });
+                
+                
+                
+                
+                $(document).ready(function(){
+                    $("#but01").click(function(){
+            
+              $("#span1").html(function(){
+                 $("#btn07").html(function(){
+                $(this).css({"display":"inline"});
+                 });
+                });
+                });
+                });
+                
+                $(document).ready(function(){
+                $("#btn07").click(function(){
+                $("#emp1").remove();
+                });
+                });
+                
+                
+                
+                
+            
+            
+                <!-- Second Button -->
+                 $(document).ready(function(){
+            $("#but001").click(function(){
+        $("#mbody2").html(function(){
+          return $("#id01 li:eq(1)").html();
+        });
+       
+            });    
+               });
+            
+                $(document).ready(function(){
+                    $("#but001").click(function(){
+              $("#span2").html(function(){
+                 $("#btn08").html(function(){
+                    $(this).css({"display":"inline"});
+                 });
+                });
+                });
+                });
+                
+                $(document).ready(function(){
+                $("#btn08").click(function(){
+                $("#emp2").remove();
+                });
+                });
+                <!-- Third Button -->
+                
+                $(document).ready(function(){
+            $("#but0001").click(function(){
+        $("#mbody3").html(function(){
+        return $("#id01 li:eq(2)").html(); 
+        });
+       
+            });    
+               });
+                
+                $(document).ready(function(){
+                    $("#but0001").click(function(){
+              $("#span3").html(function(){
+                 $("#btn09").html(function(){
+                    $(this).css({"display":"inline"});
+                 });
+                });
+                });
+                });
+                 
+                $(document).ready(function(){
+                $("#btn09").click(function(){
+                $("#emp3").remove();
+                });
+                });
+                
+            
+                
+            </script>
+            
+            <div class="container-fluid" id="emp1"><div class="container-fluid" id="mbody1"></div><div class="container-fluid" id="span1"><button type="button" onclick="decreaseFunction()" id="btn07" class="btn btn-primary btn-block" style="background-color: black;border:1px solid black;margin-top: 0; font-family: 'Josefin Sans', sans-serif; width: 200px; display: none; ">Remove</button></div></div><div class="container-fluid" id="emp2"><div class="container-fluid" id="mbody2"></div><div class="container-fluid" id="span2"><button type="button" id="btn08" onclick="decreaseFunction()" class="btn btn-primary btn-block" style="display: none; background-color: black;border:1px solid black;margin-top: 0; font-family: 'Josefin Sans', sans-serif; width: 200px; ">Remove</button></div></div><div class="container-fluid" id="emp3"><div class="container-fluid" id="mbody3" ></div><div class="container-fluid" id="span3"><button type="button" id="btn09" onclick="decreaseFunction()" class="btn btn-primary btn-block" style=" display: none; background-color: black;border:1px solid black;margin-top: 0; font-family: 'Josefin Sans', sans-serif; width: 200px; ">Remove</button></div></div>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+      </div>
+  </div>
+
+            
+            
+            
+            
+            
+            <!--WishList Badge-->
+            <script>
+                var n=0;
+                function increaseFunc(){
+                
+                n=n+1;
+                document.getElementById("badge1").innerHTML=n;
+                    
+                }
+                
+                function decreaseFunction(){
+                n=n-1;
+                document.getElementById("badge1").innerHTML=n;
+        
+                }
+                function zeroNum(){
+                    if(document.getElementById("badge1").innerHTML==0){
+                        document.getElementById("badge1").style.display="hidden";
+                    }
+                    else{
+                       document.getElementById("badge1").style.display="visible";
+                    }
+                }
+                
+            </script>
+            
+            <!--Side Bar-->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <br><br>
+                    <li><a href="welcome.html">&nbsp;&nbsp;&nbsp;<font color="black">Home</font></a></li>
+                    <li><a href="Collections.html">&nbsp;&nbsp;&nbsp;<font color="black">Collections</font></a></li>
+                 <li><a href="New.html">&nbsp;&nbsp;&nbsp;<font color="black">New</font></a></li>
+                    <li><a href="Accessories.html">&nbsp;&nbsp;&nbsp;<font color="black">Accessories</font></a></li>
+                    <li><a href="Contact.html">&nbsp;&nbsp;&nbsp;<font color="black">Contact</font></a></li>
+                </ul>
+            </div>
+        </div>
+    </head>
+        <body onload="zeroNum()">
+        <div id="wrapper">
+
+        <div class="row">
+            <nav id="header"><ul class="parent"><li id="sort007"><a href="#" id=sort1>Sort</a><ul class="child"><div id="div01"><a onclick="myFunction()"><div id="div1" class="colour"><li>Price: Low to High</li></div></a><a onclick="myFunction1()"><div id="div2" class="colour"><li>Price: High to Low</li></div></a><a onclick="myFunction2()"><div id="div3" class="colour"><li>A-Z</li></div></a><a onclick="myFunction3()"><div id="div4" class="colour"><li>Z-A</li></div></a></div></ul></li><li><a href="filter.html" style="text-decoration: none;"><font color="black">Filter</font></a></li><li><i class="fa fa-search" aria-hidden="true" id="sbutton"></i><ul class="child3"><div class="center-block"><div class="input-group"><li><input type="search" name="search" style="position:relative;left: -25px; margin: 0; top:0;" id="search" class="form-control" placeholder=" Search" onkeyup="mySort()" autofocus></li><div class="input-group-btn"><button type="button" style="position:relative;left: -26px; margin: 0; top:0;"  class="btn btn-default" id="close"><i class="fa fa-times" aria-hidden="true"></i></button></div></div></div></ul></li></ul>
+            </nav>
+            <script>
+            
+                $(document).ready(function(){
+                $("#close").click(function(){
+                $("#search").slideUp("fast");
+                    
+                });
+                    
+                });
+            
+                $(document).ready(function(){
+            $("#close").click(
+            function(){
+            $("ul.child3").animate({
+                width:'toggle'
+            }, "fast")
+            });
+            });            
+            </script>
+            
+            <script>
+            function myFunction2(){
+            var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    //Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*check if the next item should
+      switch place with the current item:*/
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /*if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop:*/
+        shouldSwitch= true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark the switch as done:*/
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+            } 
+                
+            </script>
+            
+                
+            <script>
+            
+            function myFunction3(){
+            var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    //Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*check if the next item should
+      switch place with the current item:*/
+      if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
+        /*if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop:*/
+        shouldSwitch= true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark the switch as done:*/
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+            } 
+                
+                
+                
+            
+            
+            </script>
+            
+            
+            <script>
+            
+            
+            function myFunction(){
+            var list, i, switching, b, shouldSwitch, c;
+  list = document.getElementById("id01");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    c=list.getElementsByTagName("LI");
+    b = list.getElementsByTagName("P");
+      
+    //Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+     var keyA = b[i].textContent;
+     var x = Number(keyA);
+        var keyB=b[i+1].textContent;
+        var y = Number(keyB);
+        
+      
+      if ((x-y)>0) {
+        /*if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop:*/
+        shouldSwitch= true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark the switch as done:*/
+      c[i].parentNode.insertBefore(c[i + 1], c[i]);
+      switching = true;
+    }
+  }
+            } 
+                
+    
+                
+                
+                
+                
+                
+                
+            </script>
+            
+            
+            <script>
+           
+            
+                 function myFunction1(){
+            var list, i, switching, b, shouldSwitch, c;
+  list = document.getElementById("id01");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    c=list.getElementsByTagName("LI");
+    b = list.getElementsByTagName("P");
+      
+    //Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+     var keyA = b[i].textContent;
+     var x = Number(keyA);
+        var keyB=b[i+1].textContent;
+        var y = Number(keyB);
+        
+      
+      if ((x-y)<0) {
+        /*if next item is alphabetically
+        lower than current item, mark as a switch
+        and break the loop:*/
+        shouldSwitch= true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark the switch as done:*/
+      c[i].parentNode.insertBefore(c[i + 1], c[i]);
+      switching = true;
+    }
+  }
+            } 
+                
+    
+                
+                
+                
+            
+            
+            
+            </script>
+           
+            
+            
+            
+        
+            
+            
+            <style>
+                .style{
+                    background-color: #E3E8EE;
+                }
+            </style>
+            </div><script>$(document).ready(function(){
+                $(".colour").click(function(){
+                
+                    $(".colour").removeClass("style");
+                    $(this).addClass("style");
+                    
+                });
+                
+            });
+            </script>
+            <br>
+            
+            
+        <div id="main-page">
+        <div class="center-block" id="pix1">
+                 <ul id="id01" class="alphaList">
+                     <li><div id="divm1"><img src="img/model1.jpg" id="model1" align="middle"></div><br><h5>Bow-Front Cutout A-line Dress</h5><pre>$</pre><p>69.00</p><div id="wrap001"><select class="size005">Select a size &nbsp;<option value="xs">X-S</option><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select>&nbsp;&nbsp;<select class="quan005">Qty &nbsp;<option value="one">1</option></select><br><br><div id="btndiv" class="btn-group"><button type="button" id="but01" onclick="increaseFunc()"  class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wish List</button>&nbsp;<button type="button" data-toggle="modal" data-target="#myModal01" id="but02"  class="btn btn-default"><a href="#" style="text-decoration: none;"><font color="white">Watch Video</font></a></button></div></div><br>
+                        </li>
+                        <br>
+                        <li><div id="divm2"><img src="img/model8.jpg" id="model2" align="middle"></div><br><h5>Pins and Needles Embroided Top</h5><pre>$</pre><p>125.00</p><div id="wrap001"><select class="size005">Select a size &nbsp;<option value="xs">X-S</option><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select>&nbsp;&nbsp;<select class="quan005">Qty &nbsp;<option value="one">1</option></select><br><br><div class="btn-group" id="btndiv1"><button type="button" onclick="increaseFunc()" id="but001" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wish List</button>&nbsp;<button type="button" id="but002" data-toggle="modal" data-target="#myModal01" class="btn btn-default"><a href="#" istyle="text-decoration: none;"><font color="white">Watch Video</font></a></button></div></div><br>
+                        </li>
+                        <br>
+                        <li><div id="divm3"><img src="img/model6.jpg" id="model3" align="middle"></div><br><h5>Embroided Crop Top</h5><pre>$</pre><p>85.00</p><div id="wrap001"><select class="size005">Select a size &nbsp;<option value="xs">X-S</option><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select>&nbsp;&nbsp;<select class="quan005">Qty &nbsp;<option value="one">1</option></select><br><br><div class="btn-group" id="btndiv2"><button type="button" onclick="increaseFunc()" id="but0001" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wish List</button>&nbsp;<button type="button" id="but0002" data-toggle="modal" data-target="#myModal01" class="btn btn-default"><a href="#" style="text-decoration: none;"><font color="white">Watch Video</font></a></button></div></div><br>
+                        </li>
+                        <br>
+                        </ul>
+                </div>
+        
+            
+        
+            
+            
+            
+            
+            
+            </div>
+              
+            
+            </div>
+            <!--Modal for Video-->
+            <div class="container-fluid">
+            <div class="modal fade" id="myModal01" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Luxe' Embroided Collection</h4>
+        </div>
+        <div class="modal-body">
+           
+            <video id="video" autobuffer height="240" width="360" controls>
+  <source src="Collection.mp4" type="video/mp4">
+  <source src="Collection.webm" type="video/webm">
+  <source src="Collectionvid.3gp" type="video/3gp">
+ <source src="vid1.ogv" type="video/ogg">
+  
+                
+</video>
+            <script>
+                var video = document.getElementById('video');
+video.addEventListener('click',function(){
+  video.play();
+},false);
+            </script>
+        
+        
+               
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="dis1" class="btn btn-default" data-dismiss="modal">Close</button>
+            
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+            <!--Modal Video-->
+           
+
+            
+            <!--Adding LI to Modal-->
+            <script>
+               <!--First Button-->
+                
+               $(document).ready(function(){
+            $("#but01").click(function(){
+           $("#id01>li:eq(0)").html(function(){
+               $("#btndiv").remove();
+               });
+           });
+                
+                
+            });
+                   
+                   
+            
+                
+                <!--Second Button-->
+                $(document).ready(function(){
+            $("#but001").click(function(){
+           $("#id01>li:eq(1)").html(function(){
+               $("#btndiv1").remove();
+           });
+                
+                
+            });
+                   
+                   
+               });
+                
+                <!--Third Button-->
+            
+            $(document).ready(function(){
+            $("#but0001").click(function(){
+           $("#id01>li:eq(2)").html(function(){
+               $("#btndiv2").remove();
+           });
+                
+                
+            });
+                   
+                   
+               });
+            
+            
+            </script>
+                
+            
+            
+            <!--Input Search JS Code-->
+            
+            <script>
+            function mySort(){
+                
+                var input, filter, ul, li, a, i;
+                input=document.getElementById("search");
+                filter=input.value.toUpperCase();
+                ul=document.getElementById("id01");
+                li=ul.getElementsByTagName("li");
+                for(i=0; i<li.length; i++){
+                    
+                    a=li[i].getElementsByTagName("h5")[0];
+                    if(a.innerHTML.toUpperCase().indexOf(filter)> -1){
+                        
+                        li[i].style.display ="";
+                    }
+                    else{
+                        li[i].style.display="none";
+                    }
+                }
+                
+                
+                
+            }
+    
+            
+            </script>
+            
+            <!-- Menu Toggle Script-->
+        <script>
+            $("#menu-toggle").click(function(e){
+                                   e.preventDefault();
+            $("#wrapper").toggleClass("menuDisplayed");});
+                                   
+        </script>
+            
+         <!--Sort and Filter Toggle Script-->
+            <script>
+            $(document).ready(function(){
+            $("#sort007").click(
+            function(){
+            $("ul.child").toggle("fast", function(){
+            $("#main-page").toggleClass("blur");});
+            });
+            });
+            
+            
+                               
+    
+            
+                                 
+            
+            </script>
+            <!--Search-->
+            <script>
+                $(document).ready(function(){
+                $("#sbutton").click(function(){
+                $("#search").slideDown("fast");
+                    
+                });
+                    
+                });
+                
+                
+                
+               
+                
+                
+                
+                
+                
+                $(document).ready(function(){
+            $("#sbutton").click(
+            function(){
+            $("ul.child3").animate({
+                width:'toggle'
+            }, "fast")
+            });
+            });
+                
+            
+            
+            </script>
+            <!-- Image Zooming -->
+            <style>
+                .zoom{
+                    position: relative;
+                    transform-origin: 40% 40%;
+                     margin-left: -60px;
+                
+                    transform: scale(1.5, 1.5);
+                   
+                    z-index: 1;
+                    padding-bottom: 15px;
+                    }
+                
+                .zoom1{
+                    position: relative;
+                    transform-origin: 40% 40%;
+                    margin-left: -60px;
+                    transform: scale(1.5, 1.5);
+                    
+                    z-index: 1;
+                    padding-top: 10px;
+                    padding-bottom: 17px;
+                    }
+        
+            
+            
+            </style>
+            <script>
+                
+            $(document).ready(function(){
+            $("#divm1").click(function(){
+            $("#model1").toggleClass("zoom");
+              
+                
+                
+            });
+            });
+            
+                
+            
+            $(document).ready(function(){
+            $("#divm2").click(function(){
+            $("#model2").toggleClass("zoom1");
+              
+                
+                
+            });
+            });
+            
+                
+        
+              $(document).ready(function(){
+            $("#divm3").click(function(){
+            $("#model3").toggleClass("zoom1");
+              
+                
+                
+            });
+            });
+        
+              
+            
+            
+            
+            </script>
+          
+       
+            
+             
+        </body>
+        </html>
+    
+        
+    

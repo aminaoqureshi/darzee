@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+               
+
+<script type="text/javascript" src="cordova.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <style>
+            @viewport{
+                width:auto;
+            }
+        </style>
+        <script src="phonegap-1.2.0.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+         <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+        <script src="jquery-3.2.1.js" type="text/javascript"></script> 
+       <script src="jquery-ui.js" type="text/javascript"></script>
+      <script src="jquery.min.js" type="text/javascript"></script>
+            <script src="bootstrap.min.js" type="text/javascript"></script>
+        <script src="fontawesome.js" type="text/javascript"></script>
+    
+        <!--Font Link-->
+       <link href="css/Josefin.css" rel="stylesheet" type="text/css">
+        <link href="css/Montserrat.css" rel="stylesheet" type="text/css">
+        
+        
+        <title>Darzee</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+    </head>
+    <body>
+    <div class="container-fluid">
+        <div class="container">
+        
+            <img src="img/man.png">
+            
+            <form action="welcome.html">
+                <div class="form-input">
+                    <input type="text" name="username" id="name2" placeholder=" Name" required autofocus>
+                </div>
+                <div class="form-input1">
+                    <input type="email" name="email" id="email2" placeholder=" Email" class="Email" required>
+                </div>
+                <input type="submit" name="submit" value="LOGIN" onclick="return val()" class="btnlogin" id="btn-login">
+                <br>
+                <a href="page1.html">Forgot Password?</a>
+                </form>
+        
+        </div>
+        </div>
+        <p id="demo" class="bg-primary"></p>
+        
+        <script>
+            function val(){
+            var x= document.getElementById('name1').value;
+            var y=document.getElementById('e-mail').value;
+            var user=localStorage.getItem('name');
+            var mail=localStorage.getItem('Email');
+            if(x!=user){
+                document.getElementById('demo').innerHTML="User does not exist.";
+                document.getElementById('name1').focus();
+                return false;
+            }
+            if(y!=mail){
+                document.getElementById('demo').innerHTML="User does not exist.";
+                
+                return false;
+            }  
+            else{
+                return true;
+            }
+        
+            }
+            
+        </script>
+    </body>
+</html>

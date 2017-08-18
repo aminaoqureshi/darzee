@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+ <script type="text/javascript" src="cordova.js"></script>
+                        
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <style>
+            @viewport{
+                width:auto;
+            }
+        </style>
+        
+        <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+        <script src="jquery-3.2.1.js" type="text/javascript"></script> 
+       <script src="jquery-ui.js" type="text/javascript"></script>
+      <script src="jquery.min.js" type="text/javascript"></script>
+            <script src="bootstrap.min.js" type="text/javascript"></script>
+        <script src="fontawesome.js" type="text/javascript"></script>
+    
+        <!--Font Link-->
+       <link href="css/Josefin.css" rel="stylesheet" type="text/css">
+        <link href="css/Montserrat.css" rel="stylesheet" type="text/css">
+        <title>Darzee</title>
+        <link rel="stylesheet" href="css/filter.css" type="text/css">
+        
+        <div id="wrapper">
+           <div class="container-fluid"><div id="can1"><a href="Accessories.html" id="text006"><font color="black" size="1.5">Cancel</font></a></div><div id="f1"><p style="color:black;"><b> Filter</b></p></div><div id="Apply1"><a href="Accessories.html" id="text007"><font color="black" size="1.5">Apply</font></a></div>
+               </div></div>
+            
+            
+            <div id="cfilter"><a href="#" id="text008" onclick="myFunction1()"><font color="black">Clear All Filters</font></a></div>
+            
+            <script>
+                function myFunction1(){
+                    location.reload();
+                }
+            
+            </script>
+            
+        
+    
+        
+    </head>
+    
+    <body>
+        
+        
+         <div id="filterop">
+            <div id="size1">Size</div>
+             <div id="size01"><ul id="sizelist" class="sizeclass"><div class="div0001"><li >X-Small</li></div><div class="div0001"><li>Small</li></div><div class="div0001"><li>Medium</li></div><div class="div0001"><li>Large</li></div></ul></div>
+                
+                <div id="color1">Color</div>
+             <div id="color01"><ul id="colorlist" class="colorclass"><div class="div0001"><li>Black</li></div><div class="div0001"><li>Red</li></div><div class="div0001"><li>Blue</li></div><div class="div0001"><li>All</li></div></ul></div>
+                
+            <div id="price1">Ratings</div>
+             <div id="price01"><ul id="pricelist" class="priceclass"><div class="div0001"><li>Highest</li></div><div class="div0001"><li>Most Popular</li></div><div class="div0001"><li>Good Stuff</li></div><div class="div0001"><li>All</li></div></ul></div>
+                
+                
+            </div>
+        
+    
+            
+            
+        
+    
+            
+        <style>
+            .lgrey{
+                background-color: #ccccb3;
+                 
+            }
+        
+        
+        </style>
+        <script>
+            $(document).ready(function(){
+            $(".div0001").click(function(){
+            $(this).toggleClass("lgrey");
+                
+                
+            });
+                
+                
+                
+                
+            });
+        
+        
+        </script>
+        <script>
+            $(document).ready(function(){
+            $("#size1").click(function(){
+            $("#size01").toggle();     
+            });     
+            });
+            
+            
+            
+            $(document).ready(function(){
+            $("#color1").click(function(){
+            $("#color01").toggle();     
+            });     
+            });
+            
+            
+            
+            $(document).ready(function(){
+            $("#price1").click(function(){
+            $("#price01").toggle();     
+            });     
+            });
+        
+        
+        
+        </script>
+    
+    
+    
+    
+    </body>
+    
+</html>

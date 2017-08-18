@@ -1,0 +1,170 @@
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.list-inline li{
+
+    
+    width:33.3%;
+
+    
+}
+#leftl{
+    text-align: left;
+    padding-left: 3px;
+}
+#centerl{
+    text-align: center;
+}
+#rightl{
+    text-align:right;
+    padding-right: 10px;
+}
+
+
+
+
+.container{
+    
+    color: black;
+    padding-top: 20px;
+    font-size: 20px;
+    height: 25px;
+    background-color: white;
+    
+
+}
+/* Side Bar CSS */
+#sidebar-wrapper{
+    z-index: 1;
+    color: white;
+    position: absolute;
+    width:0;
+    height: 100%;
+    overflow-y: hidden;
+    background-image: url('../img/0516-800x804.jpg');
+    opacity: 0.95;
+}
+/* Main */
+#main-page{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+
+    
+    
+    
+}
+
+/* Change the width of the siebar to display it*/
+#wrapper.menuDisplayed #sidebar-wrapper{
+    width: 250px;
+    height: 520px;
+    margin-top: 20px;
+
+}
+
+#wrapper.menuDisplayed #main-page{
+    padding-left: 250px;
+    
+    
+}
+
+/* Side bar Styling */
+.sidebar-nav{
+    color: white;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+.sidebar-nav li{
+    color: black ;
+    text-indent: 15px;
+    line-height: 40px;
+    
+    
+}
+
+.sidebar-nav li a{
+    display:block;
+    text-decoration: none;
+  /*  background: #ddd; */
+    
+}
+
+.sidebar-nav li a:hover{
+    background: darkgray;
+    
+}
+
+
+
+
+h2{text-align:center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    
+    
+    
+}
+
+#menu-toggle{
+ background: white;
+ color: black;
+ width: 32px;
+ border-color: white;
+ display:inline-block;
+ 
+
+}
+.container-fluid{
+        border-bottom: 1px solid #C0C0C0;
+
+    
+}
+
+
+#name1, #email1, #message1{
+    background: none;
+    border: 2px solid #21a1e1;
+    padding: 10px 20px;
+    font size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#name1, #email1{
+    width:250px;
+}
+#message1{
+width: 250px;
+    display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#btnStore, #btnStore1{
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #6699ff;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form1{
+    text-align:center;
+    
+}
+
+

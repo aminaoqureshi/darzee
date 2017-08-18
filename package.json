@@ -1,0 +1,13 @@
+{
+    "name": "com.darzee",
+    "version": "1.0.0",
+    "displayName": "Darzee",
+    "cordova": {
+        "platforms": [
+            "android"
+        ]
+    },
+    "dependencies": {
+        "cordova-android": "~6.2.3"
+    }
+}
